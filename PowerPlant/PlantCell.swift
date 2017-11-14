@@ -10,9 +10,13 @@ import UIKit
 
 class PlantCell: UITableViewCell {
 
+    @IBOutlet weak var Plant: UILabel!
+    @IBOutlet weak var Subtitle: UILabel!
+    @IBOutlet weak var difficulty: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

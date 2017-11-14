@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func sequeButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "powerPlantToPlantTable", sender: self)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

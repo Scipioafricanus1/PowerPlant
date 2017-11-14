@@ -19,6 +19,10 @@
 		CE333A891FBA678C0007AB99 /* PowerPlantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333A881FBA678C0007AB99 /* PowerPlantUITests.swift */; };
 		CE9ABDDB1FBB517F008CC575 /* PlantTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9ABDDA1FBB517F008CC575 /* PlantTableView.swift */; };
 		CE9ABDDD1FBB51C5008CC575 /* PlantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9ABDDC1FBB51C5008CC575 /* PlantCell.swift */; };
+		CE9ABDDF1FBB7ADD008CC575 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9ABDDE1FBB7ADD008CC575 /* Plant.swift */; };
+		CE9ABDE11FBB7CAD008CC575 /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9ABDE01FBB7CAD008CC575 /* FirebaseHelper.swift */; };
+		CE9ABDE31FBB86BC008CC575 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9ABDE21FBB86BC008CC575 /* DetailsViewController.swift */; };
+		CE9ABDE71FBB9DEC008CC575 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE9ABDE61FBB9DEC008CC575 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		CE333A8A1FBA678C0007AB99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE9ABDDA1FBB517F008CC575 /* PlantTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTableView.swift; sourceTree = "<group>"; };
 		CE9ABDDC1FBB51C5008CC575 /* PlantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCell.swift; sourceTree = "<group>"; };
+		CE9ABDDE1FBB7ADD008CC575 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		CE9ABDE01FBB7CAD008CC575 /* FirebaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
+		CE9ABDE21FBB86BC008CC575 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		CE9ABDE61FBB9DEC008CC575 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D4DEF2CC35231AC86E2EE1FB /* Pods-PowerPlantTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PowerPlantTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PowerPlantTests/Pods-PowerPlantTests.release.xcconfig"; sourceTree = "<group>"; };
 		DECDCC2B4E116C112B0E0FF2 /* Pods-PowerPlantUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PowerPlantUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PowerPlantUITests/Pods-PowerPlantUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F1FFF7967F04C897F3FB6721 /* Pods-PowerPlantTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PowerPlantTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PowerPlantTests/Pods-PowerPlantTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -141,10 +149,14 @@
 		CE333A671FBA678B0007AB99 /* PowerPlant */ = {
 			isa = PBXGroup;
 			children = (
+				CE9ABDE61FBB9DEC008CC575 /* GoogleService-Info.plist */,
 				CE333A681FBA678B0007AB99 /* AppDelegate.swift */,
+				CE9ABDE01FBB7CAD008CC575 /* FirebaseHelper.swift */,
 				CE333A6A1FBA678B0007AB99 /* ViewController.swift */,
 				CE9ABDDA1FBB517F008CC575 /* PlantTableView.swift */,
+				CE9ABDDE1FBB7ADD008CC575 /* Plant.swift */,
 				CE9ABDDC1FBB51C5008CC575 /* PlantCell.swift */,
+				CE9ABDE21FBB86BC008CC575 /* DetailsViewController.swift */,
 				CE333A6C1FBA678B0007AB99 /* Main.storyboard */,
 				CE333A6F1FBA678B0007AB99 /* Assets.xcassets */,
 				CE333A711FBA678B0007AB99 /* LaunchScreen.storyboard */,
@@ -289,6 +301,7 @@
 			files = (
 				CE333A731FBA678B0007AB99 /* LaunchScreen.storyboard in Resources */,
 				CE333A701FBA678B0007AB99 /* Assets.xcassets in Resources */,
+				CE9ABDE71FBB9DEC008CC575 /* GoogleService-Info.plist in Resources */,
 				CE333A6E1FBA678B0007AB99 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,7 +485,10 @@
 			files = (
 				CE333A6B1FBA678B0007AB99 /* ViewController.swift in Sources */,
 				CE9ABDDD1FBB51C5008CC575 /* PlantCell.swift in Sources */,
+				CE9ABDDF1FBB7ADD008CC575 /* Plant.swift in Sources */,
 				CE333A691FBA678B0007AB99 /* AppDelegate.swift in Sources */,
+				CE9ABDE31FBB86BC008CC575 /* DetailsViewController.swift in Sources */,
+				CE9ABDE11FBB7CAD008CC575 /* FirebaseHelper.swift in Sources */,
 				CE9ABDDB1FBB517F008CC575 /* PlantTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

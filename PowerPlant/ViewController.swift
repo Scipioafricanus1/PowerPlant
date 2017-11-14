@@ -10,7 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
+  @IBAction func segue(_ sender: Any) {
+    performSegue(withIdentifier: "userDashSegue", sender: self)
+  }
+  override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }

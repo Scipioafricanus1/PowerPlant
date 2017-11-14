@@ -14,6 +14,8 @@
 		CE333A731FBA678B0007AB99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE333A711FBA678B0007AB99 /* LaunchScreen.storyboard */; };
 		CE333A7E1FBA678B0007AB99 /* PowerPlantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333A7D1FBA678B0007AB99 /* PowerPlantTests.swift */; };
 		CE333A891FBA678C0007AB99 /* PowerPlantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333A881FBA678C0007AB99 /* PowerPlantUITests.swift */; };
+		CE9ABDDB1FBB517F008CC575 /* PlantTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9ABDDA1FBB517F008CC575 /* PlantTableView.swift */; };
+		CE9ABDDD1FBB51C5008CC575 /* PlantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9ABDDC1FBB51C5008CC575 /* PlantCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		CE333A841FBA678C0007AB99 /* PowerPlantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowerPlantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE333A881FBA678C0007AB99 /* PowerPlantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerPlantUITests.swift; sourceTree = "<group>"; };
 		CE333A8A1FBA678C0007AB99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9ABDDA1FBB517F008CC575 /* PlantTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTableView.swift; sourceTree = "<group>"; };
+		CE9ABDDC1FBB51C5008CC575 /* PlantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				CE333A681FBA678B0007AB99 /* AppDelegate.swift */,
 				CE333A6A1FBA678B0007AB99 /* ViewController.swift */,
+				CE9ABDDA1FBB517F008CC575 /* PlantTableView.swift */,
+				CE9ABDDC1FBB51C5008CC575 /* PlantCell.swift */,
 				CE333A6C1FBA678B0007AB99 /* Main.storyboard */,
 				CE333A6F1FBA678B0007AB99 /* Assets.xcassets */,
 				CE333A711FBA678B0007AB99 /* LaunchScreen.storyboard */,
@@ -260,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE333A6B1FBA678B0007AB99 /* ViewController.swift in Sources */,
+				CE9ABDDD1FBB51C5008CC575 /* PlantCell.swift in Sources */,
 				CE333A691FBA678B0007AB99 /* AppDelegate.swift in Sources */,
+				CE9ABDDB1FBB517F008CC575 /* PlantTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

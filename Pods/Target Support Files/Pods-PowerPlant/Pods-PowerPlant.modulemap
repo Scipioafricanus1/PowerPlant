@@ -1,0 +1,6 @@
+framework module Pods_PowerPlant {
+  umbrella header "Pods-PowerPlant-umbrella.h"
+
+  export *
+  module * { export * }
+}

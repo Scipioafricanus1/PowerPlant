@@ -44,15 +44,11 @@ class PlantTableView: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PlantCell
         // Configure the cell...
         let plant = plants[indexPath.row]
+        cell.maintenance.text = plant.maintenance
         cell.Plant.text = plant.name
-        if plant.waterNeeds.characters.count >= 3 {
-            cell.Subtitle.isHidden = false
-            cell.Subtitle.isHidden = false
-            cell.difficulty.text = plant.waterNeeds
-        } else {
-            cell.Subtitle.isHidden = true
-            cell.difficulty.isHidden = true
-        }
+        cell.waterNeeds.text = plant.waterNeeds
+        
+        
         
         return cell
     }
@@ -69,6 +65,8 @@ class PlantTableView: UITableViewController {
         dvc.descriptionIn = selectedPlant.description
         dvc.plantTypeIn = selectedPlant.plantType
         dvc.waterNeedsIn = selectedPlant.waterNeeds
+        dvc.maintenanceIn = selectedPlant.maintenance
+        dvc.tipsIn = selectedPlant.tips
     }
 
 

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Charts
 
 struct FeedInfo: Codable {
   var channel = ChannelInfo()
@@ -39,9 +40,11 @@ struct Feed: Codable {
 
 class DashboardViewController: UIViewController {
   
+  var thingSpeakUrl = "https://api.thingspeak.com/channels/357261/feeds.json?results=7"
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    getData(url: URL(string: "https://api.thingspeak.com/channels/357261/feeds.json?results=2")!)
+    getData(url: URL(string: thingSpeakUrl)!)
     // Do any additional setup after loading the view.
   }
   
@@ -54,7 +57,31 @@ class DashboardViewController: UIViewController {
         previousWaterDate = item.created_at
       }
     }
-    lastWateredLabel.text = previousWaterDate
+    
+    lastWateredLabel.text = previousWaterDate == "" ? "Not in 7 Days" : previousWaterDate
+    
+    let values = info?.feeds.map({ (item) -> Double in
+      return Double(item.field1)!
+    })
+  
+    print(values)
+    let bar_yaxis = [0, 20, 40, 60, 80, 100]
+    barChartUpdate(yaxis: bar_yaxis, values: values!)
+  }
+  
+  func barChartUpdate(yaxis: [Int], values: [Double]) {
+    var entries = [BarChartDataEntry]()
+    for (key, value) in values.enumerated() {
+      entries.append(BarChartDataEntry(x: Double(key), y: value))
+    }
+    let dataSet = BarChartDataSet(values: entries, label: "Past Soil Moisture Level")
+    let data = BarChartData(dataSet: dataSet)
+    barChart.data = data
+    barChart.chartDescription?.text = " "
+    barChart.xAxis.drawGridLinesEnabled = false
+    barChart.xAxis.drawLabelsEnabled = false
+    barChart.notifyDataSetChanged()
+    barChart.animate(xAxisDuration: 2.5, yAxisDuration: 2.5)
   }
   
   var info: FeedInfo?
@@ -79,6 +106,8 @@ class DashboardViewController: UIViewController {
     }
     task.resume()
   }
+  
+  @IBOutlet weak var barChart: BarChartView!
   
   var soilMoisterLevel = 0
   

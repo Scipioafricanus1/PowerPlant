@@ -8,7 +8,7 @@
 
 import UIKit
 import FirebaseDatabase
-
+import Foundation
 
 class PlantTableView: UITableViewController {
     var plants = [Plant]()
@@ -47,7 +47,8 @@ class PlantTableView: UITableViewController {
         cell.maintenance.text = plant.maintenance
         cell.Plant.text = plant.name
         cell.waterNeeds.text = plant.waterNeeds
-        
+        let plantName = plant.name.replacingOccurrences(of: " ", with: "-")
+        cell.myImage.image = UIImage(named: plantName)
         
         
         return cell

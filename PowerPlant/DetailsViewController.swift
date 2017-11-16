@@ -8,13 +8,14 @@
 
 import UIKit
 
+
 class DetailsViewController: UIViewController {
     var plantIn = ""
     var descriptionIn = ""
     var plantTypeIn = ""
     var waterNeedsIn = ""
     var maintenanceIn = ""
-    var tipsIn = ""
+    var tipsIn = [""]
     
 
 
@@ -31,6 +32,13 @@ class DetailsViewController: UIViewController {
         self.plantType.text = plantTypeIn
         self.details.text = descriptionIn
         self.maintenance.text = maintenanceIn
+        var bullets = ""
+    
+        for item in tipsIn {
+            print(item)
+            bullets += "\u{2022} \(item)\n"
+        }
+        self.tips.text = bullets
 
         // Do any additional setup after loading the view.
     }

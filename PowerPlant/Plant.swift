@@ -17,7 +17,7 @@ class Plant {
     let plantType:String
     let waterNeeds:String
     let maintenance: String
-    let tips: String
+    let tips: [String]
     
     init(snap: DataSnapshot) {
         key = snap.key
@@ -28,7 +28,7 @@ class Plant {
         plantType = value?["type"] as? String ?? ""
         waterNeeds = value?["waterNeeds"] as? String ?? ""
         maintenance = value?["maintenance"] as? String ?? ""
-        tips = value?["tips"] as? String ?? ""
+        tips = [value?["tips"] as? String ?? ""]
     }
     init() {
         key = ""
@@ -37,7 +37,7 @@ class Plant {
         waterNeeds = ""
         name = ""
         maintenance = ""
-        tips = ""
+        tips = [""]
     }
     
     

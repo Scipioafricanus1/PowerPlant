@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		017A2A0CD757F5DEDA7FFF73 /* Pods_PowerPlant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A545CA614D9451F266F4A41 /* Pods_PowerPlant.framework */; };
+		1EF1D8521FCB68C2007F1170 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1EF1D8511FCB68C2007F1170 /* GoogleService-Info.plist */; };
 		24E74237927B1B61152173E0 /* Pods_PowerPlantUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B779B0C9411D7FEBF0D3666 /* Pods_PowerPlantUITests.framework */; };
 		79B14D3A1C9C1A8EAA049F90 /* Pods_PowerPlantTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF467216D1EA48AC74436291 /* Pods_PowerPlantTests.framework */; };
 		CE333A691FBA678B0007AB99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333A681FBA678B0007AB99 /* AppDelegate.swift */; };
@@ -22,7 +23,6 @@
 		CE9ABDDF1FBB7ADD008CC575 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9ABDDE1FBB7ADD008CC575 /* Plant.swift */; };
 		CE9ABDE11FBB7CAD008CC575 /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9ABDE01FBB7CAD008CC575 /* FirebaseHelper.swift */; };
 		CE9ABDE31FBB86BC008CC575 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9ABDE21FBB86BC008CC575 /* DetailsViewController.swift */; };
-		CE9ABDE71FBB9DEC008CC575 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE9ABDE61FBB9DEC008CC575 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1EF1D8511FCB68C2007F1170 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		396B00DF80E48CA8628CEFA6 /* Pods-PowerPlant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PowerPlant.release.xcconfig"; path = "Pods/Target Support Files/Pods-PowerPlant/Pods-PowerPlant.release.xcconfig"; sourceTree = "<group>"; };
 		77997791A4DAA9C13AF1B49F /* Pods-PowerPlant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PowerPlant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PowerPlant/Pods-PowerPlant.debug.xcconfig"; sourceTree = "<group>"; };
 		7A545CA614D9451F266F4A41 /* Pods_PowerPlant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PowerPlant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,7 +67,6 @@
 		CE9ABDDE1FBB7ADD008CC575 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 		CE9ABDE01FBB7CAD008CC575 /* FirebaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
 		CE9ABDE21FBB86BC008CC575 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
-		CE9ABDE61FBB9DEC008CC575 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D4DEF2CC35231AC86E2EE1FB /* Pods-PowerPlantTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PowerPlantTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PowerPlantTests/Pods-PowerPlantTests.release.xcconfig"; sourceTree = "<group>"; };
 		DECDCC2B4E116C112B0E0FF2 /* Pods-PowerPlantUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PowerPlantUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PowerPlantUITests/Pods-PowerPlantUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F1FFF7967F04C897F3FB6721 /* Pods-PowerPlantTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PowerPlantTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PowerPlantTests/Pods-PowerPlantTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,12 +149,12 @@
 		CE333A671FBA678B0007AB99 /* PowerPlant */ = {
 			isa = PBXGroup;
 			children = (
-				CE9ABDE61FBB9DEC008CC575 /* GoogleService-Info.plist */,
 				CE333A681FBA678B0007AB99 /* AppDelegate.swift */,
 				CE9ABDE01FBB7CAD008CC575 /* FirebaseHelper.swift */,
 				CE333A6A1FBA678B0007AB99 /* ViewController.swift */,
 				CE9ABDDA1FBB517F008CC575 /* PlantTableView.swift */,
 				CE9ABDDE1FBB7ADD008CC575 /* Plant.swift */,
+				1EF1D8511FCB68C2007F1170 /* GoogleService-Info.plist */,
 				CE9ABDDC1FBB51C5008CC575 /* PlantCell.swift */,
 				CE9ABDE21FBB86BC008CC575 /* DetailsViewController.swift */,
 				CE333A6C1FBA678B0007AB99 /* Main.storyboard */,
@@ -301,7 +301,7 @@
 			files = (
 				CE333A731FBA678B0007AB99 /* LaunchScreen.storyboard in Resources */,
 				CE333A701FBA678B0007AB99 /* Assets.xcassets in Resources */,
-				CE9ABDE71FBB9DEC008CC575 /* GoogleService-Info.plist in Resources */,
+				1EF1D8521FCB68C2007F1170 /* GoogleService-Info.plist in Resources */,
 				CE333A6E1FBA678B0007AB99 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

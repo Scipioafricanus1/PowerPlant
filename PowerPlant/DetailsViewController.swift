@@ -37,7 +37,7 @@ class DetailsViewController: UIViewController {
         
         bullets = "\u{2022} \(tipsIn)"
         //this line should print bulleted tips now, based on the firebase with \n characters in it.
-        bullets = plant.name.replacingOccurrences(of: "\n", with: "\n\u{2022}")
+        bullets = tipsIn.replacingOccurrences(of: "\n", with: "\n\u{2022}")
         
         self.tips.text = bullets
 

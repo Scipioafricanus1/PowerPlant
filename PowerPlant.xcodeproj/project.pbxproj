@@ -18,6 +18,7 @@
 		CE333A731FBA678B0007AB99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE333A711FBA678B0007AB99 /* LaunchScreen.storyboard */; };
 		CE333A7E1FBA678B0007AB99 /* PowerPlantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333A7D1FBA678B0007AB99 /* PowerPlantTests.swift */; };
 		CE333A891FBA678C0007AB99 /* PowerPlantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333A881FBA678C0007AB99 /* PowerPlantUITests.swift */; };
+		CE774B751FCCADFF001B2DEE /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE774B741FCCADFF001B2DEE /* DashboardViewController.swift */; };
 		CE9ABDDB1FBB517F008CC575 /* PlantTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9ABDDA1FBB517F008CC575 /* PlantTableView.swift */; };
 		CE9ABDDD1FBB51C5008CC575 /* PlantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9ABDDC1FBB51C5008CC575 /* PlantCell.swift */; };
 		CE9ABDDF1FBB7ADD008CC575 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9ABDDE1FBB7ADD008CC575 /* Plant.swift */; };
@@ -62,6 +63,7 @@
 		CE333A841FBA678C0007AB99 /* PowerPlantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowerPlantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE333A881FBA678C0007AB99 /* PowerPlantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerPlantUITests.swift; sourceTree = "<group>"; };
 		CE333A8A1FBA678C0007AB99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE774B741FCCADFF001B2DEE /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		CE9ABDDA1FBB517F008CC575 /* PlantTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTableView.swift; sourceTree = "<group>"; };
 		CE9ABDDC1FBB51C5008CC575 /* PlantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCell.swift; sourceTree = "<group>"; };
 		CE9ABDDE1FBB7ADD008CC575 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				CE9ABDDC1FBB51C5008CC575 /* PlantCell.swift */,
 				CE9ABDE21FBB86BC008CC575 /* DetailsViewController.swift */,
 				CE333A6C1FBA678B0007AB99 /* Main.storyboard */,
+				CE774B741FCCADFF001B2DEE /* DashboardViewController.swift */,
 				CE333A6F1FBA678B0007AB99 /* Assets.xcassets */,
 				CE333A711FBA678B0007AB99 /* LaunchScreen.storyboard */,
 				CE333A741FBA678B0007AB99 /* Info.plist */,
@@ -490,6 +493,7 @@
 				CE9ABDE31FBB86BC008CC575 /* DetailsViewController.swift in Sources */,
 				CE9ABDE11FBB7CAD008CC575 /* FirebaseHelper.swift in Sources */,
 				CE9ABDDB1FBB517F008CC575 /* PlantTableView.swift in Sources */,
+				CE774B751FCCADFF001B2DEE /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

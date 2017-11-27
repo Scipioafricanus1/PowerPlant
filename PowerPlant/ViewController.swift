@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class ViewController: UIViewController {
 
     @IBAction func sequeButton(_ sender: UIButton) {
         performSegue(withIdentifier: "powerPlantToPlantTable", sender: self)

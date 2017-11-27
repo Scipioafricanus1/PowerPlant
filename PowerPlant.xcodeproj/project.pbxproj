@@ -12,7 +12,7 @@
 		24E74237927B1B61152173E0 /* Pods_PowerPlantUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B779B0C9411D7FEBF0D3666 /* Pods_PowerPlantUITests.framework */; };
 		79B14D3A1C9C1A8EAA049F90 /* Pods_PowerPlantTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF467216D1EA48AC74436291 /* Pods_PowerPlantTests.framework */; };
 		CE333A691FBA678B0007AB99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333A681FBA678B0007AB99 /* AppDelegate.swift */; };
-		CE333A6B1FBA678B0007AB99 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333A6A1FBA678B0007AB99 /* FirstViewController.swift */; };
+		CE333A6B1FBA678B0007AB99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333A6A1FBA678B0007AB99 /* ViewController.swift */; };
 		CE333A6E1FBA678B0007AB99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE333A6C1FBA678B0007AB99 /* Main.storyboard */; };
 		CE333A701FBA678B0007AB99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE333A6F1FBA678B0007AB99 /* Assets.xcassets */; };
 		CE333A731FBA678B0007AB99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE333A711FBA678B0007AB99 /* LaunchScreen.storyboard */; };
@@ -51,7 +51,7 @@
 		B980217F08552B5716686B8D /* Pods-PowerPlantUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PowerPlantUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PowerPlantUITests/Pods-PowerPlantUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE333A651FBA678B0007AB99 /* PowerPlant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerPlant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE333A681FBA678B0007AB99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE333A6A1FBA678B0007AB99 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		CE333A6A1FBA678B0007AB99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE333A6D1FBA678B0007AB99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE333A6F1FBA678B0007AB99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE333A721FBA678B0007AB99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,7 +62,6 @@
 		CE333A841FBA678C0007AB99 /* PowerPlantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowerPlantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE333A881FBA678C0007AB99 /* PowerPlantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerPlantUITests.swift; sourceTree = "<group>"; };
 		CE333A8A1FBA678C0007AB99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE4B940B1FCC932200D43C65 /* BRENT.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = BRENT.storyboard; path = /Users/ubicomp7/Desktop/PowerPlant/BRENT.storyboard; sourceTree = "<absolute>"; };
 		CE9ABDDA1FBB517F008CC575 /* PlantTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTableView.swift; sourceTree = "<group>"; };
 		CE9ABDDC1FBB51C5008CC575 /* PlantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCell.swift; sourceTree = "<group>"; };
 		CE9ABDDE1FBB7ADD008CC575 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
@@ -152,13 +151,12 @@
 			children = (
 				CE333A681FBA678B0007AB99 /* AppDelegate.swift */,
 				CE9ABDE01FBB7CAD008CC575 /* FirebaseHelper.swift */,
-				CE333A6A1FBA678B0007AB99 /* FirstViewController.swift */,
+				CE333A6A1FBA678B0007AB99 /* ViewController.swift */,
 				CE9ABDDA1FBB517F008CC575 /* PlantTableView.swift */,
 				CE9ABDDE1FBB7ADD008CC575 /* Plant.swift */,
 				1EF1D8511FCB68C2007F1170 /* GoogleService-Info.plist */,
 				CE9ABDDC1FBB51C5008CC575 /* PlantCell.swift */,
 				CE9ABDE21FBB86BC008CC575 /* DetailsViewController.swift */,
-				CE4B940B1FCC932200D43C65 /* BRENT.storyboard */,
 				CE333A6C1FBA678B0007AB99 /* Main.storyboard */,
 				CE333A6F1FBA678B0007AB99 /* Assets.xcassets */,
 				CE333A711FBA678B0007AB99 /* LaunchScreen.storyboard */,
@@ -485,7 +483,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE333A6B1FBA678B0007AB99 /* FirstViewController.swift in Sources */,
+				CE333A6B1FBA678B0007AB99 /* ViewController.swift in Sources */,
 				CE9ABDDD1FBB51C5008CC575 /* PlantCell.swift in Sources */,
 				CE9ABDDF1FBB7ADD008CC575 /* Plant.swift in Sources */,
 				CE333A691FBA678B0007AB99 /* AppDelegate.swift in Sources */,

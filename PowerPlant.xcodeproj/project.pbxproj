@@ -11,6 +11,7 @@
 		1EF1D8521FCB68C2007F1170 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1EF1D8511FCB68C2007F1170 /* GoogleService-Info.plist */; };
 		24E74237927B1B61152173E0 /* Pods_PowerPlantUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B779B0C9411D7FEBF0D3666 /* Pods_PowerPlantUITests.framework */; };
 		79B14D3A1C9C1A8EAA049F90 /* Pods_PowerPlantTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF467216D1EA48AC74436291 /* Pods_PowerPlantTests.framework */; };
+		CB2B50D11FCC7C71006DA756 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2B50D01FCC7C71006DA756 /* DashboardViewController.swift */; };
 		CE333A691FBA678B0007AB99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333A681FBA678B0007AB99 /* AppDelegate.swift */; };
 		CE333A6B1FBA678B0007AB99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333A6A1FBA678B0007AB99 /* ViewController.swift */; };
 		CE333A6E1FBA678B0007AB99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE333A6C1FBA678B0007AB99 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		7A545CA614D9451F266F4A41 /* Pods_PowerPlant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PowerPlant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B779B0C9411D7FEBF0D3666 /* Pods_PowerPlantUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PowerPlantUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B980217F08552B5716686B8D /* Pods-PowerPlantUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PowerPlantUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PowerPlantUITests/Pods-PowerPlantUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB2B50D01FCC7C71006DA756 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		CE333A651FBA678B0007AB99 /* PowerPlant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerPlant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE333A681FBA678B0007AB99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE333A6A1FBA678B0007AB99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				CE9ABDDA1FBB517F008CC575 /* PlantTableView.swift */,
 				CE9ABDDE1FBB7ADD008CC575 /* Plant.swift */,
 				1EF1D8511FCB68C2007F1170 /* GoogleService-Info.plist */,
+				CB2B50D01FCC7C71006DA756 /* DashboardViewController.swift */,
 				CE9ABDDC1FBB51C5008CC575 /* PlantCell.swift */,
 				CE9ABDE21FBB86BC008CC575 /* DetailsViewController.swift */,
 				CE333A6C1FBA678B0007AB99 /* Main.storyboard */,
@@ -490,6 +493,7 @@
 				CE9ABDE31FBB86BC008CC575 /* DetailsViewController.swift in Sources */,
 				CE9ABDE11FBB7CAD008CC575 /* FirebaseHelper.swift in Sources */,
 				CE9ABDDB1FBB517F008CC575 /* PlantTableView.swift in Sources */,
+				CB2B50D11FCC7C71006DA756 /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

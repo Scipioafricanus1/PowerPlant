@@ -8,7 +8,7 @@
 
 import UIKit
 import Charts
-//comment
+
 struct FeedInfo: Codable {
   var channel = ChannelInfo()
   var feeds = [Feed]()

@@ -277,8 +277,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yA7-iL-HxC">
-                                <rect key="frame" x="129" y="598" width="116" height="30"/>
-                                <state key="normal" title="See plant Details"/>
+                                <rect key="frame" x="130" y="598" width="114" height="30"/>
+                                <state key="normal" title="Plant Dashboard"/>
                                 <connections>
                                     <segue destination="cgl-Do-WWT" kind="show" id="7cg-2z-BSs"/>
                                 </connections>
@@ -312,10 +312,10 @@
                             <constraint firstItem="Asp-6i-je8" firstAttribute="top" secondItem="WDz-ss-CL3" secondAttribute="bottom" constant="15.5" id="iyJ-0z-Kj8"/>
                             <constraint firstItem="Asp-6i-je8" firstAttribute="trailing" secondItem="U4z-E4-b4b" secondAttribute="trailing" id="jFa-nN-Qz7"/>
                             <constraint firstItem="9Ca-FY-f47" firstAttribute="leading" secondItem="U4z-E4-b4b" secondAttribute="leading" id="kdK-KI-z9k"/>
-                            <constraint firstItem="yA7-iL-HxC" firstAttribute="leading" secondItem="U4z-E4-b4b" secondAttribute="leading" constant="129" id="mkY-Mq-Wew"/>
+                            <constraint firstItem="yA7-iL-HxC" firstAttribute="leading" secondItem="U4z-E4-b4b" secondAttribute="leading" constant="130" id="mkY-Mq-Wew"/>
                             <constraint firstItem="U4z-E4-b4b" firstAttribute="trailing" secondItem="wHw-IE-nGT" secondAttribute="trailing" id="mmk-Ka-hl4"/>
                             <constraint firstItem="U4z-E4-b4b" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="WDz-ss-CL3" secondAttribute="trailing" constant="153.5" id="pTv-hk-7xo"/>
-                            <constraint firstItem="U4z-E4-b4b" firstAttribute="trailing" secondItem="yA7-iL-HxC" secondAttribute="trailing" constant="130" id="qGd-Xg-zrH"/>
+                            <constraint firstItem="U4z-E4-b4b" firstAttribute="trailing" secondItem="yA7-iL-HxC" secondAttribute="trailing" constant="131" id="qGd-Xg-zrH"/>
                             <constraint firstItem="Asp-6i-je8" firstAttribute="leading" secondItem="U4z-E4-b4b" secondAttribute="leading" id="qU1-0k-Mry"/>
                             <constraint firstItem="WDz-ss-CL3" firstAttribute="top" secondItem="9Ca-FY-f47" secondAttribute="bottom" constant="-61.5" id="qZO-Lg-Cik"/>
                             <constraint firstItem="dRl-j7-u43" firstAttribute="top" secondItem="Asp-6i-je8" secondAttribute="bottom" constant="0.5" id="qz0-Vx-1RR"/>

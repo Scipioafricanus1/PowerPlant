@@ -18,6 +18,7 @@ class PlantTableView: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Plants"
         fbHelper.getDataAsArray(ref: ref, typeOf: plants) { (array) in
             self.plants = array
             DispatchQueue.main.async {self.tableView.reloadData() }

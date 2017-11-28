@@ -30,14 +30,15 @@ class DetailsViewController: UIViewController {
         self.title = plantIn
         self.waterNeeds.text = waterNeedsIn
         self.plantType.text = plantTypeIn
-        self.details.text = descriptionIn
+        self.details.text = "\t" + descriptionIn
         self.maintenance.text = maintenanceIn
         var bullets = ""
 
         
-        bullets = "\u{2022} \(tipsIn)"
+        
         //this line should print bulleted tips now, based on the firebase with \n characters in it.
-        bullets = tipsIn.replacingOccurrences(of: "\n", with: "\n\u{2022}")
+        bullets = tipsIn.replacingOccurrences(of: "\n", with: "\n\u{2022}   ")
+        bullets = "\u{2022}   \(bullets)"
         
         self.tips.text = bullets
 
@@ -48,7 +49,11 @@ class DetailsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let dvc = segue.destination as! DashboardViewController
+        dvc.plantNameIn = plantIn
+        dvc.waterNeedsIn = waterNeedsIn
+    }
 
     /*
     // MARK: - Navigation

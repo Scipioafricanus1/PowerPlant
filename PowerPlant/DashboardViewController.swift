@@ -44,30 +44,38 @@ class DashboardViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    getData(url: URL(string: thingSpeakUrl)!)
+    print("DATA LOADING")
+    
     // Do any additional setup after loading the view.
   }
+    
   
   override func viewDidAppear(_ animated: Bool) {
-    soilProgress.progress = Float((info?.feeds[0].field1)!)! / 100
-    tankProgress.progress = Float((info?.feeds[0].field2)!)! / 100
-    var previousWaterDate = ""
-    for item in (info?.feeds)! {
-      if item.field3 == "1" {
-        previousWaterDate = item.created_at
-      }
-    }
-    
-    lastWateredLabel.text = previousWaterDate == "" ? "Not in 7 Days" : previousWaterDate
-    
-    let values = info?.feeds.map({ (item) -> Double in
-      return Double(item.field1)!
-    })
-  
-    print(values)
-    let bar_yaxis = [0, 20, 40, 60, 80, 100]
-    barChartUpdate(yaxis: bar_yaxis, values: values!)
+    getData(url: URL(string: thingSpeakUrl)!)
   }
+    
+    func updateUI() {
+        var previousWaterDate = ""
+        for item in (info?.feeds)! {
+            if item.field3 == "1" {
+                previousWaterDate = item.created_at
+            }
+        }
+        
+        DispatchQueue.main.async {
+            self.soilProgress.progress = Float((self.info?.feeds[0].field1)!)! / 100
+            self.tankProgress.progress = Float((self.info?.feeds[0].field2)!)! / 100
+            self.lastWateredLabel.text = previousWaterDate == "" ? "Not in 7 Days" : previousWaterDate
+        }
+        
+        let values = info?.feeds.map({ (item) -> Double in
+            return Double(item.field1)!
+        })
+        
+        print(values)
+        let bar_yaxis = [0, 20, 40, 60, 80, 100]
+        barChartUpdate(yaxis: bar_yaxis, values: values!)
+    }
   
   func barChartUpdate(yaxis: [Int], values: [Double]) {
     var entries = [BarChartDataEntry]()
@@ -97,6 +105,8 @@ class DashboardViewController: UIViewController {
           print("contacts: \(contacts)")
           self.info = contacts
           print(self.info!)
+            print("DATA LOADED")
+            self.updateUI()
         } catch {
           print("Error trying to decode JSON object")
         }
@@ -107,16 +117,16 @@ class DashboardViewController: UIViewController {
     task.resume()
   }
   
-  @IBOutlet weak var barChart: BarChartView!
+    @IBOutlet weak var barChart: BarChartView!
+    
   
   var soilMoisterLevel = 0
   
   var tankProgressLevel = 0
-  
-  @IBOutlet weak var soilProgress: UIProgressView!
-  
-  @IBOutlet weak var tankProgress: UIProgressView!
-  
-  @IBOutlet weak var lastWateredLabel: UILabel!
+ 
+    @IBOutlet weak var soilProgress: UIProgressView!
 
+    @IBOutlet weak var tankProgress: UIProgressView!
+    
+    @IBOutlet weak var lastWateredLabel: UILabel!
 }

@@ -101,6 +101,43 @@ class DashboardViewController: UIViewController {
     var info: FeedInfo?
     
     func getData(url: URL) {
+        // added http request.
+        
+        let url1 = URL(string: "https://api.particle.io/v1/devices/230044000d47343438323536/led?access_token=77b46a655f21d7488aa33433b1f26cb10dd7f8d2")!
+        var request = URLRequest(url: url1)
+        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        request.httpMethod = "POST"
+        var postString = ""
+        if (waterNeedsIn == "Low" )
+        {
+            postString = "args=1"
+        }
+        else if (waterNeedsIn == "Medium")
+        {
+            postString = "args=2"
+        }
+        else if (waterNeedsIn == "High")
+        {
+            postString = "args=3"
+        }
+        
+        request.httpBody = postString.data(using: .utf8)
+        let task1 = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else {                                                 // check for fundamental networking error
+                print("error=\(String(describing: error))")
+                return
+            }
+            
+            if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {           // check for http errors
+                print("statusCode should be 200, but is \(httpStatus.statusCode)")
+                print("response = \(String(describing: response))")
+            }
+            
+            let responseString = String(data: data, encoding: .utf8)
+            print("responseString = \(String(describing: responseString!))")
+        }
+        task1.resume()
+        //
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let data = data {
                 do {
